@@ -1,47 +1,59 @@
-**Data Visualization**
+**World Bank Data Visualization Project**
 
-**Project Overview**
+**Overview**
 
-This task focuses on creating bar charts and histograms to visually represent the distribution of categorical and continuous variables in a dataset. Data visualization is an essential step in data analysis as it helps identify patterns, trends, and anomalies that may not be obvious from raw data alone.
-
-By using Python visualization libraries, we transform complex datasets into intuitive visual insights that can guide decision-making and further exploration.
-
-**Objectives**
-
-Load and prepare the dataset for visualization.
-
-Create a bar chart to visualize the distribution of categorical variables.
-
-Create a histogram to visualize the distribution of continuous variables.
-
-Interpret visual insights to understand patterns and trends in the data.
-
-**Tools & Technologies**
-
-Python
-
-Pandas – for data handling
-
-Matplotlib / Seaborn – for creating visualizations
-
-Jupyter Notebook – for an interactive workflow
+This project explores and visualizes data from the World Bank.
+The dataset contains global development indicators for multiple countries, spanning several decades.
+The focus of this project is on exploratory data analysis and visual storytelling using Python.
 
 **Dataset**
+Source: World Bank Open Data
 
-For this task, you can use any dataset containing categorical and continuous variables.
-Example datasets:
+Format: Excel
 
-Titanic Dataset (Kaggle)
+Key Columns:
 
-Superstore Sales Dataset
+Country Name – Name of the country
 
-Custom CSV file
+Country Code – ISO country code
 
-**Visualizations Created**
+Indicator Name – Name of the development indicator
 
-Bar Chart – Displays the frequency/count of each category in a categorical column (e.g., gender, product category).
+Indicator Code – Unique indicator code
 
-Histogram – Shows the distribution of a continuous variable (e.g., age, sales amount).
-
+Years (1960–2024) – Numeric values for each year
 
 
+**Tools & Libraries**
+
+Python – Main programming language
+
+pandas – Data loading and manipulation
+
+matplotlib – Data visualization
+
+numpy – Numerical computations
+
+**Visualizations**
+1️Histogram
+Purpose: To show the frequency distribution of a selected year’s indicator values across countries.
+
+Insight: Helps identify the spread, distribution shape, and common value ranges for the indicator in a given year.
+
+plt.hist(data_for_year, bins=20, edgecolor='black')
+plt.title(f'Histogram of Values in {year_to_plot}')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.show()
+
+2️Bar Chart
+Purpose: To visualize Nigeria’s trend for a selected indicator over the years.
+
+Insight: Shows patterns, growth, or decline over time.
+
+plt.figure(figsize=(12, 6))
+plt.bar(nigeria_long["Year"], nigeria_long["Value"], color="skyblue")
+plt.title("Nigeria - Indicator Trend Over Time")
+plt.xlabel("Year")
+plt.ylabel("Value")
+plt.show()
