@@ -35,6 +35,7 @@ matplotlib – Data visualization
 numpy – Numerical computations
 
 **Visualizations**
+
 1️Histogram
 Purpose: To show the frequency distribution of a selected year’s indicator values across countries.
 
@@ -57,3 +58,7 @@ plt.title("Nigeria - Indicator Trend Over Time")
 plt.xlabel("Year")
 plt.ylabel("Value")
 plt.show()
+
+**License**
+
+This project is for educational purposes and uses World Bank Open Data.
