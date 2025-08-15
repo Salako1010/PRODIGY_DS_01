@@ -41,23 +41,14 @@ Purpose: To show the frequency distribution of a selected year’s indicator val
 
 Insight: Helps identify the spread, distribution shape, and common value ranges for the indicator in a given year.
 
-plt.hist(data_for_year, bins=20, edgecolor='black')
-plt.title(f'Histogram of Values in {year_to_plot}')
-plt.xlabel('Value')
-plt.ylabel('Frequency')
-plt.show()
+
 
 2️Bar Chart
 Purpose: To visualize Nigeria’s trend for a selected indicator over the years.
 
 Insight: Shows patterns, growth, or decline over time.
 
-plt.figure(figsize=(12, 6))
-plt.bar(nigeria_long["Year"], nigeria_long["Value"], color="skyblue")
-plt.title("Nigeria - Indicator Trend Over Time")
-plt.xlabel("Year")
-plt.ylabel("Value")
-plt.show()
+
 
 **License**
 
